@@ -45,11 +45,11 @@ const Main = () => {
         </>:
         <div className="result">
             <div className="result-title">
-              <img src={assets.user_icon} alt="" />
+              <img className="user" src={assets.user_icon} alt="" />
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
-              <img src={assets.lambda_icon} alt="" />
+              <img className="lamda" src={assets.lambda_icon} alt="" />
               {loading?
                <div className="loader">
                   <hr />
