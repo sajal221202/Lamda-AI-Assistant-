@@ -134,9 +134,13 @@
     display: flex;
     align-items: center;
 }
-.result img{
+.result .user{
     width: 40px;
     border-radius: 50%;
+}
+.result .lamda{
+    width: 50px;
+    margin-left: -5px;
 }
 .result-data{
     display: flex;
