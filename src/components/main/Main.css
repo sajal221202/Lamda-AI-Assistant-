@@ -175,18 +175,76 @@
     line-height: 1.8;
     font-weight: 300;
 }
-@media(max-width){
-    .main-bottom input{
-        flex: none;
-        width: 150px;
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main .greet {
+      font-size: 48px;
     }
-    .main-bottom imp{
-        width: 20px;
+    .main .cards {
+      gap: 10px;
     }
-    .search-box{
-        padding: 5px 10px;
+    .main .card {
+      height: 180px;
     }
-    .search-box div{
-        gap: 5px;
+  }
+  
+  @media (max-width: 992px) {
+    .main .nav {
+      flex-direction: column;
+      align-items: flex-start;
     }
-}
+    .main .greet {
+      font-size: 42px;
+      margin: 40px 0;
+    }
+    .search-box {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .search-box input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main .nav {
+      font-size: 20px;
+    }
+    .main .nav .advance {
+      font-size: 14px;
+      margin-left: auto;
+    }
+    .main .greet {
+      font-size: 36px;
+    }
+    .main .card {
+      height: 160px;
+    }
+    .main-bottom {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .main .nav {
+      font-size: 18px;
+    }
+    .main .greet {
+      font-size: 30px;
+    }
+    .main .card {
+      height: 140px;
+    }
+    .search-box {
+      padding: 5px 10px;
+    }
+    .search-box div {
+      gap: 5px;
+    }
+    .result-data p {
+      font-size: 16px;
+    }
+    .main .nav img {
+      display: none;
+    }
+  }
